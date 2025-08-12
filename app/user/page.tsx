@@ -25,7 +25,7 @@ const ChatUI = () => {
     setInput("");
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/chat`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user`, {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ text: userMessage }),
